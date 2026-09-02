@@ -1,6 +1,6 @@
 body{
-  background-color: #f4f7f6; /* Fundo suave */
-  color: #1a3636; /* Texto em tom escuro elegante */
+  background-color: #0d0e15; /* Fundo roxo bem escuro */
+  color: #e2e8f0; /* Texto cinza-claro de alta leitura */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,7 @@ h1{
   text-align: center;
   font-family: "Molle", cursive;
   font-weight: bold;
-  color: #40534c; /* Cor de destaque para o título */
+  color: #00f5d4; /* Neon Menta */
 }
 p{
   text-align: justify;
@@ -19,35 +19,47 @@ p{
 img{
   margin-top: 20px;
   max-width: 80%;
+  border: 2px solid #7b2cbf; /* Borda roxa na imagem */
+  border-radius: 8px;
 }
 a{
   text-decoration: none;
-  color: #677d6a; /* Cor para links */
+  color: #ff007f; /* Rosa Neon */
   text-align: center;
+  font-weight: bold;
 }
 a:hover{
-  color: #d6bd98; /* Cor ao passar o mouse */
-}
-body.modo_escuro {
-  background-color: #121212; /* Fundo escuro */
-  color: #e0e0e0; /* Texto claro */
-}
-body.modo_escuro a {
-  color: #81c784; /* Cor dos links no modo escuro */
+  color: #00f5d4; /* Muda para Menta ao passar o mouse */
 }
 
+/* Modo Escuro (Ainda mais contrastado) */
+body.modo_escuro {
+  background-color: #030305;
+  color: #f1f5f9;
+}
+body.modo_escuro h1 {
+  color: #ff007f; /* Título vira rosa no modo escuro */
+}
+body.modo_escuro a {
+  color: #7b2cbf; /* Links roxos no modo escuro */
+}
+
+/* Botão totalmente reformulado */
 button {
-  background-color: #40534c; /* Preenchimento do botão */
-  color: #ffffff; /* Texto do botão */
-  border: 2px solid #677d6a; /* Borda do botão */
+  background-color: #7b2cbf; /* Fundo Roxo */
+  color: #ffffff; /* Texto Branco */
+  border: 2px solid #00f5d4; /* Borda Menta */
   border-radius: 20px;
-  padding: 8px 0; /* Ajuste para o texto não ficar espremido */
   width: 90px;
+  padding: 6px 0;
   position: fixed;
   right: 10px;
   top: 50px;
   cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
 }
 button:hover {
-  background-color: #677d6a; /* Efeito ao passar o mouse no botão */
+  background-color: #ff007f; /* Fica Rosa ao passar o mouse */
+  border-color: #ffffff;
 }
