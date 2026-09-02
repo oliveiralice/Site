@@ -1,65 +1,73 @@
-body{
-  background-color: #0d0e15; /* Fundo roxo bem escuro */
-  color: #e2e8f0; /* Texto cinza-claro de alta leitura */
+body {
+  background-color: #0d0e15;
+  color: #e2e8f0;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px;
 }
-h1{
+
+h1 {
   font-size: 40px;
   text-align: center;
   font-family: "Molle", cursive;
   font-weight: bold;
-  color: #00f5d4; /* Neon Menta */
+  color: #00f5d4;
 }
-p{
-  text-align: justify;
+
+p {
+  text-align: justify; /* Ponto e vírgula corrigido aqui */
 }
-img{
+
+img {
   margin-top: 20px;
   max-width: 80%;
-  border: 2px solid #7b2cbf; /* Borda roxa na imagem */
+  border: 2px solid #7b2cbf;
   border-radius: 8px;
 }
-a{
+
+a {
   text-decoration: none;
-  color: #ff007f; /* Rosa Neon */
+  color: #ff007f;
   text-align: center;
   font-weight: bold;
 }
-a:hover{
-  color: #00f5d4; /* Muda para Menta ao passar o mouse */
+
+a:hover {
+  color: #00f5d4;
 }
 
-/* Modo Escuro (Ainda mais contrastado) */
+/* Regras do Modo Escuro */
 body.modo_escuro {
   background-color: #030305;
   color: #f1f5f9;
 }
+
 body.modo_escuro h1 {
-  color: #ff007f; /* Título vira rosa no modo escuro */
-}
-body.modo_escuro a {
-  color: #7b2cbf; /* Links roxos no modo escuro */
+  color: #ff007f;
 }
 
-/* Botão totalmente reformulado */
+body.modo_escuro a {
+  color: #7b2cbf;
+}
+
+/* Botão com propriedades corrigidas */
 button {
-  background-color: #7b2cbf; /* Fundo Roxo */
-  color: #ffffff; /* Texto Branco */
-  border: 2px solid #00f5d4; /* Borda Menta */
+  background-color: #7b2cbf;
+  color: #ffffff;
+  border: 2px solid #00f5d4;
   border-radius: 20px;
   width: 90px;
-  padding: 6px 0;
+  padding: 8px 0;
   position: fixed;
   right: 10px;
   top: 50px;
   cursor: pointer;
   font-weight: bold;
-  transition: 0.3s;
+  transition: background-color 0.3s, color 0.3s; /* Deixa a troca de cor suave */
 }
+
 button:hover {
-  background-color: #ff007f; /* Fica Rosa ao passar o mouse */
+  background-color: #ff007f;
   border-color: #ffffff;
 }
